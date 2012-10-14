@@ -12,6 +12,10 @@ body {
   padding: 20px;
 }
 
+.main header {
+  margin-bottom: 27px;
+}
+
 @media (max-width : 980px) {
   body {
     padding-top: 0;
@@ -22,11 +26,9 @@ body {
 pre.linenums {
   box-shadow: inset 34px 0 0 #333, inset 35px 0 0 #161616, inset 36px 0 0 #535353;
 }
-
 ol.linenums {
   margin-left: 30px;
 }
-
 pre.linenums li {
   padding-left: 11px;
 }
@@ -54,32 +56,26 @@ blockquote {
   width: 350px;
   border: 3px dashed #E5E5E5;
 }
-
-
 blockquote:before, blockquote:after {
   display: block;
   font-size: 700%;
   height: 0;
   color: #69c;
 }
-
 blockquote:before {
   content: "\201C";
   margin-left: -.5em;
   line-height: .9em;
 }
-
 blockquote:after {
   content: '\201D';
   margin-left: 360px;
   line-height: .3em;
 }
-
 cite {
   display: block;
   text-align: right;
 }
-
 cite:before {
   content: '--';
   margin-right: 3px;
@@ -97,7 +93,23 @@ cite:before {
   font-size: 17px;
   line-height: 23px;
 }
-
 .posts a {
   margin-left: 14px;
+}
+
+.table {
+  border: 1px solid #BDBDBD;
+}
+.table th {
+  text-align: center;
+  background: #D5D5D5;
+  border-left: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+.table th:first-child {
+  border-left: 0;
+}
+
+time {
+  color: #AAA;
 }
