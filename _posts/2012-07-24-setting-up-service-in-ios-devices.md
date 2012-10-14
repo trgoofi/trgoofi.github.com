@@ -52,7 +52,7 @@ In terminal Activate service by:
 This assume you can ssh to your devices.
 
 **PS:** While you open files in this directory with your text editor you will see symbols that don't make senses.
-Don't be panic. It just XML files.
+Don't be panic. It just XML files. You can install [plist Editor for Windows][1] to open and edit it.
 
 ## References
 1. [Creating Launch Daemons and Agents] (http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html) 
@@ -60,4 +60,5 @@ Don't be panic. It just XML files.
 3. [launchd(8) OS X Manual Page] (https://developer.apple.com/library/mac/#documentation/Darwin/Reference/Manpages/man8/launchd.8.html)
 4. [launchd.plist(5) OS X Manual Page] (http://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html)
 
-[1]: http://en.wikipedia.org/wiki/Launchd
+
+[1]: http://www.icopybot.com/plistset.exe
