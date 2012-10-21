@@ -113,3 +113,8 @@ cite:before {
 time {
   color: #AAA;
 }
+
+ul.tags, .tags li {
+  display: inline;
+  list-style: none;
+}
