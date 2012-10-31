@@ -16,6 +16,10 @@ body {
   margin-bottom: 27px;
 }
 
+.page header {
+  margin-bottom: 16px;
+}
+
 @media (max-width : 980px) {
   body {
     padding-top: 0;
