@@ -1,0 +1,34 @@
+---
+title: Lowercase
+layout: post
+tags: [tool]
+---
+
+<style>
+textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #C9C9C9;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, .9);
+}
+input.btn {
+  display: block;
+  margin: 20px auto;
+}
+</style>
+
+<form action="#">
+  <textarea rows="16"></textarea>
+  <input type="submit" value="Lowercase" class="btn btn-large btn-primary">
+</form>
+
+<script src="/assets/js/jquery.js" type="text/javascript"></script>
+<script>
+$('form').submit(function(e){
+  e.preventDefault();
+  var $textarea = $('textarea');
+  $textarea.val() && $textarea.val($textarea.val().toLowerCase());
+});
+</script>
