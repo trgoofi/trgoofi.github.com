@@ -11,6 +11,6 @@ Hopefully this could gave you some help. And also any comments will be appreciat
 <h2>Recent Posts</h2>
 <ul class="posts">
   {% for post in site.posts limit: 5 %}
-    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date: "%Y-%m-%d" }}</span><a href="{{ post.url | append: "/" }}" title="{{ post.title }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
