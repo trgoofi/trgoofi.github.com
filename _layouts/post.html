@@ -14,6 +14,21 @@ layout: default
     {% endif %}
   </header>
   {{ content }}
+	<nav class="pagination pagination-centered">
+	  <ul>
+      {% if page.previous %}
+			  <li><a href="{{ page.previous.url | append: '/' }}" title="{{ page.previous.title }}">&laquo; Prev</a></li>
+      {% else %}
+			  <li class="disabled"><a>&laquo; Prev</a></li>
+      {% endif %}
+			<li><a href="/archives.html">Archives</a></li>
+      {% if page.next %}
+			  <li><a href="{{ page.next.url | append: '/' }}" title="{{ page.next.title }}">Next &raquo;</a></li>
+      {% else %}
+			  <li class="disabled"><a>Next &raquo;</a></li>
+      {% endif %}
+		</ul>
+	</nav>
   <footer class="comment">
     {% include comment %}
   </footer>
