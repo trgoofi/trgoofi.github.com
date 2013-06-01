@@ -122,3 +122,7 @@ ul.tags, .tags li {
   display: inline;
   list-style: none;
 }
+
+.nav i {
+  margin-right: 5px;
+}
